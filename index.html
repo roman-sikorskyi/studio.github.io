@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>studio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1b0701b630.js" crossorigin="anonymous"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo_link">  
+            <h1 class="logo">Studio</h1>
+        </a> 
+        <nav class="nav">
+            <a href="#individuals" class="nav_link">Individuals</a>
+            <a href="#companies" class="nav_link">Companies</a>
+            <a href="#studio" class="nav_link">The Studio</a>
+            <a href="#about" class="nav_link">About Us</a>
+            <a href="#blog" class="nav_link">Blogs</a>
+        </nav> 
+        <button class="header_btn" id="open-modal-btn">Book Now</button>
+        <div class="burger-menu" id="burger-menu">
+            <i class="fa-solid fa-bars fa-2xl"></i>
+        </div>
+        <nav class="links">
+            <a href="https://www.facebook.com/?locale=uk_UA" target="_blank" class="nav_icon">
+                <i class="fa-brands fa-facebook-f fa-xl"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="nav_icon">
+                <i class="fa-brands fa-instagram fa-xl"></i>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" class="nav_icon">
+                <i class="fa-brands fa-linkedin-in fa-xl"></i>
+            </a>
+            <a href="https://www.yelp.com/" target="_blank" class="nav_icon">
+                <i class="fa-brands fa-yelp fa-xl"></i>
+            </a>
+            <a href="https://reviewgrower.com/google-business-rating/" target="_blank" class="nav_icon">
+                <i class="fa-brands fa-google fa-xl"></i>
+            </a>
+        </nav>
+    </header>
+    
+  
+    <div id="modal" class="modal">
+        <div class="modal_content">
+            <span class="close_btn">&times;</span>
+            <h2>Book Your Appointment</h2>
+            <p>Please fill in your details and we will get back to you soon!</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <section class="intro">
+        <p class="intro_title">
+            Fast. Simple. <br>
+            Professional <br>
+            Headshots. 
+        </p>
+        <h5 class="intro_text">
+            #1 Rated Headshot Photographers.
+        </h5>
+        <button class="intro_btn"><a href="#sessions" class="intro-btn-link">Browse Sessions</a></button>
+    </section>
+    <section class="white">
+        d
+    </section>
+    <section class="two_bar" id="sessions">
+        <div class="bar">
+            <i id = "user" class=" fa-solid fa-user fa-2xl" style="color: #ff2600;"></i>
+            <h5 class="bar_title"  id="individuals">Individual Sessions</h5>
+            <div class="numbers">
+                <div class="sessions">
+                    <span class="number"> 1</span>
+                    <p class="session_text">Studio Sessions</p> 
+                </div>
+                <hr class="bar_line" width="415px" height="1px" color="#656565">
+                <div class="sessions">
+                    <span class="number"> 2</span>
+                    <p class="session_text">Outdoor Sessions</p> 
+                </div>
+                <hr class="bar_line" width="415px"height="1px" color="#656565">
+                <div class="sessions">
+                    <span class="number"> 3</span>
+                    <p class="session_text">In-office Sessions</p> 
+                </div>
+                <hr class="bar_line" width="415px" height="1px"color="#656565">
+            </div>
+            <button class="bar_btn"><a href="#services" class="bar-link">See more</a></button>
+        </div>
+        <div class="bar">
+            <i id = "users"class="fa-solid fa-users fa-2xl" style="color: #ff2600;"></i>
+            <h5 class="bar_title2" id="companies">Companies Sessions</h5>
+        
+            <div class="numbers">
+                <div class="sessions">
+                    <span class="number1"> 1</span>
+                    <p class="sessions_text">Studio Sessions</p> 
+                </div>
+                <hr class="bar_line" width="415px" height="1px" color="#dedede">
+                <div class="sessions">
+                    <span class="number1"> 2</span>
+                    <p class="sessions_text">Outdoor Sessions</p> 
+                </div>
+                <hr class="bar_line" width="415px"height="1px" color="dedede">
+              
+               
+            </div>
+            <button class="bar_btn1"><a href="#services" class="bar-link">See more</a></button>
+        </div>
+    </section>
+    <section class="map" id="studio">
+        <div class="map_input">
+            <h1 class="map_title">Studio Near Me</h1>
+            <p class="map_text">Search for your professional by zip code:</p>
+            <div class="map_forms">
+                <form action="" >
+                    <input type="text" name="" placeholder="Put text to search" class="map_inputform"id="">
+                </form>
+                <button class="map_btn">
+                    <a href="https://g.co/kgs/HsrSjtb" target="_blank" class="map-link">Search</a>    
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h1 class="services_title">
+            Our professional services
+        </h1>
+        <nav class="services_navbar">
+            <a href="" class="services_navlink">All</a>
+            <a href="" class="services_navlink">Modeling</a>
+            <a href="" class="services_navlink">Acting</a>
+            <a href="" class="services_navlink">Corporate</a>
+            <a href="" class="services_navlink">Business</a>
+            <a href="" class="services_navlink">Professional</a>
+            <a href="" class="services_navlink">Group</a>
+            <a href="" class="services_navlink">Company</a>
+            <a href="" class="services_navlink">Officer</a>
+        </nav>
+        <div class="services_grid">
+            <div class="grid_imgs">
+                <div class="grid_item1" data-big-img="img/img1.jpg"></div>
+                <div class="grid_item2" data-big-img="img/img2.jpg"></div>
+                <div class="grid_item3" data-big-img="img/img3.jpg"></div>
+                <div class="grid_item4" data-big-img="img/img4.jpg"></div>
+    
+                <div class="grid_cursors">
+                    <a href="javascript:void(0);" class="grid_link" id="prev">
+                        <i class="fa-solid fa-arrow-left fa-xl"></i>
+                    </a>
+                </div>
+                <div class="grid_cursors">
+                    <a href="javascript:void(0);" class="grid_link" id="next">
+                        <i class="fa-solid fa-arrow-right fa-xl"></i>
+                    </a>
+                </div>                
+            </div>
+            <div class="grid_bigItem" id="big-image"></div>
+        </div>
+    </section>
+    <section class="gray">
+        <div class="gray_important">
+            <div class="gray_info">
+                    <h1 class="info_title">
+                        Why are headshots
+                        important?
+                    </h1>
+                    <p class="info_text">
+                        It may not seem indispensable, but lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Donec nisi enim, finibus non malesuada
+                        vitae, porttitor vitae enim. Nulla eget fringilla libero, ut ultricies neque.
+                        Morbi id aliquet sem. Ut mattis diam sit amet orci faucibus dignissim. 
+                        Aliquam erat volutpat. Curabitur eu efficitur quam.
+                    </p>
+                    <img src="img/arrow.png" class="arrow"alt="">
+            </div>
+            <div class="gray_tips">
+                <h1 class="tips_title">
+                    5 Useful Tips    
+                </h1>
+                <div class="tips_itemBar">
+                    <div class="tip_items">
+                        <div class="tip_item">
+                            <div class="item_img">
+                                <img src="img/camera.png" alt="" class="img_i">
+                            </div>
+                            <p class="item_text">
+                                Go professional, it’s worth it, <br>
+                                because cheap looks cheap. 
+                            </p>
+                            
+                        </div>
+
+                        <hr class="item_line">
+
+                        <div class="tip_item">
+                            <div class="item_img">
+                                <img src="img/eyes.png" alt="" class="img_i">
+                            </div>
+                            <p class="item_text">
+                                It’s all about the eyes and <br>
+                                what’s behind them.
+                            </p>
+                            
+                        </div>
+                        
+                        <hr class="item_line">
+
+                    </div>
+                    <div class="tip_items">
+                        <div class="tip_item">
+                            <div class="item_img">
+                                <img src="img/Mirror.png" alt="" class="img_i">
+                            </div>
+                            <p class="item_text">
+                                Make sure it looks like you,<br>
+                                not like you want to be.
+                            </p>
+                          
+                        </div>
+                        
+                        <hr class="item_line">
+
+                        <div class="tip_item">
+                            <div class="item_img">
+                                <img src="img/studio.png" alt="" class="img_i">
+                            </div>
+                            <p class="item_text">
+                                Control framing, lighting <br>
+                                & background.
+                            </p>
+                            
+                        </div>
+
+                        <hr class="item_line">
+
+                        <div class="tip_item">
+                            <div class="item_img">
+                                <img src="img/Tshirt.png" alt="" class="img_i">
+                            </div>
+                            <p class="item_text">
+                                Stay chill with clothing & <br>
+                                makeup, you must be you.
+                            </p>
+                            
+                        </div>
+                        
+                        <hr class="item_line">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gray_black">
+            <h1 class="black_title">
+                Professional Headshot Services
+            </h1>
+            <p class="black_text">
+                Studio Inc is maecenas vulputate, sem at auctor vulputate, elit nunc sagittis ligula, vitae pulvinar metus elit in ante.
+                Aenean tincidunt erat ac ante placerat facilisis. Fusce sed ligula tortor. Quisque non dignissim erat. Vestibulum ante  
+                ipsum primis in faucibus. <br>
+                <br>
+                <br>
+                Covid-19 Update: We are open for studio, office, and outdoor sessions. For more information <br>
+                on our safety procedures, visit Studio Covid-19 Guidelines. <br>
+            </p>
+        </div>
+    </section>
+    <section class="clients">
+        <h1 class="clients_title">Clients love us</h1>
+        <h5 class="clients_subtitle">We have formed true friendships.</h5>
+        <div class="clients_items_wrapper">
+            <div class="clients_items">
+                <!-- Перша група клієнтів -->
+                <div class="clients_item">
+                    <img src="img/client1.jpg" alt="" class="clients_img">
+                    <div class="clients_info">
+                        <h2 class="clients_name">Andrea Mcconell</h2>
+                        <div class="clients_rate">
+                            <img src="img/star.png" alt="">
+                        </div>
+                    </div>
+                    <p class="clients_quote">
+                        " Studio is exactly what our business has been <br>
+                        lacking. I will recommend them to everyone. "
+                    </p>
+                </div>
+                <div class="clients_item">
+                    <img src="img/client2.jpg" alt="" class="clients_img">
+                    <div class="clients_info">
+                        <h6 class="clients_name">Marvin Luna</h6>
+                        <div class="clients_rate">
+                            <img src="img/star.png" alt="">
+                        </div>
+                    </div>
+                    <p class="clients_quote">
+                        " Studio impressed me on multiple levels. <br>
+                        Studio is worth much more than offered. "
+                    </p>
+                </div>
+                <div class="clients_item">
+                    <img src="img/client3.jpg" alt="" class="clients_img">
+                    <div class="clients_info">
+                        <h6 class="clients_name">Shanai Haas</h6>
+                        <div class="clients_rate">
+                            <img src="img/star.png" alt="">
+                        </div>
+                    </div>
+                    <p class="clients_quote">
+                        " Studio saved my job interview. Keep up with <br>
+                        the excellent work! "
+                    </p>
+                </div>
+    
+                <!-- Друга група клієнтів -->
+                <div class="clients_item">
+                    <img src="img/client2.jpg" alt="" class="clients_img">
+                    <div class="clients_info">
+                        <h6 class="clients_name">Marvin Luna</h6>
+                        <div class="clients_rate">
+                            <img src="img/star.png" alt="">
+                        </div>
+                    </div>
+                    <p class="clients_quote">
+                        " Studio impressed me on multiple levels. <br>
+                        Studio is worth much more than offered. "
+                    </p>
+                </div>
+                <div class="clients_item">
+                    <img src="img/client3.jpg" alt="" class="clients_img">
+                    <div class="clients_info">
+                        <h6 class="clients_name">Shanai Haas</h6>
+                        <div class="clients_rate">
+                            <img src="img/star.png" alt="">
+                        </div>
+                    </div>
+                    <p class="clients_quote">
+                        " Studio saved my job interview. Keep up with <br>
+                        the excellent work! "
+                    </p>
+                </div>
+                <div class="clients_item">
+                    <img src="img/client1.jpg" alt="" class="clients_img">
+                    <div class="clients_info">
+                        <h2 class="clients_name">Andrea Mcconell</h2>
+                        <div class="clients_rate">
+                            <img src="img/star.png" alt="">
+                        </div>
+                    </div>
+                    <p class="clients_quote">
+                        " Studio is exactly what our business has been <br>
+                        lacking. I will recommend them to everyone. "
+                    </p>
+                </div>
+    
+                <!-- Третя група клієнтів -->
+                <div class="clients_item">
+                    <img src="img/client3.jpg" alt="" class="clients_img">
+                    <div class="clients_info">
+                        <h6 class="clients_name">Shanai Haas</h6>
+                        <div class="clients_rate">
+                            <img src="img/star.png" alt="">
+                        </div>
+                    </div>
+                    <p class="clients_quote">
+                        " Studio saved my job interview. Keep up with <br>
+                        the excellent work! "
+                    </p>
+                </div>
+                <div class="clients_item">
+                    <img src="img/client1.jpg" alt="" class="clients_img">
+                    <div class="clients_info">
+                        <h2 class="clients_name">Andrea Mcconell</h2>
+                        <div class="clients_rate">
+                            <img src="img/star.png" alt="">
+                        </div>
+                    </div>
+                    <p class="clients_quote">
+                        " Studio is exactly what our business has been <br>
+                        lacking. I will recommend them to everyone. "
+                    </p>
+                </div>
+                <div class="clients_item">
+                    <img src="img/client2.jpg" alt="" class="clients_img">
+                    <div class="clients_info">
+                        <h6 class="clients_name">Marvin Luna</h6>
+                        <div class="clients_rate">
+                            <img src="img/star.png" alt="">
+                        </div>
+                    </div>
+                    <p class="clients_quote">
+                        " Studio impressed me on multiple levels. <br>
+                        Studio is worth much more than offered. "
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="clients_navMenu">
+            <a href="#" class="clients_navItem" data-index="0"><img src="img/nav1.png" alt="" class="clients_navPoint"></a>
+            <a href="#" class="clients_navItem" data-index="1"><img src="img/nav2.png" alt="" class="clients_navPoint"></a>
+            <a href="#" class="clients_navItem" data-index="2"><img src="img/nav3.png" alt="" class="clients_navPoint"></a>
+        </div>
+    </section>     
+    <section class="banner" id="about">
+            <div class="frame">
+                <h3 class="frame-text">
+                    Fast, convenient & friendly <br>
+                    professional headshot sessions. 
+                </h3>
+                <button class="frame-btn">
+                    <a href="#blog" class="frame-link"> About Us</a>
+                </button>
+            </div>
+    </section>
+    <section class="blog" id="blog">
+        <h1 class="blog-title">Our Blog</h1>
+        <p class="blog-subtitle">Check our latest news.</p>
+        <div class="blog-items" id="blog-items">   
+            <div class="blog-item">
+                <img src="img/blog1.jpg" alt="" class="item-img">
+                <p class="item-text">
+                    all about headshots inside professional studios
+                </p>
+                <div class="item-footer">
+                    <span class="item-comments">
+                        <i class="fa-regular fa-comment" style="color: #fd5b4f;"></i>
+                        15 Comments
+                    </span>
+                    <span class="item-date">June, 2020</span>
+                </div>
+            </div>
+            <div class="blog-item">
+                <img src="img/blog2.jpg" alt="" class="item-img">
+                <p class="item-text">
+                    How do professionals edit their photos and What photo editing software they use 
+                </p>
+                <div class="item-footer-2">
+                    <span class="item-comments">
+                        <i class="fa-regular fa-comment" style="color: #fd5b4f;"></i>
+                        9 Comments
+                    </span>
+                    <span class="item-date">July, 2020</span>
+                </div>
+            </div>
+            <div class="blog-item">
+                <img src="img/blog3.jpg" alt="" class="item-img">
+                <p class="item-text">
+                    best Courses In Photography from home 
+                </p>
+                <div class="item-footer">
+                    <span class="item-comments">
+                        <i class="fa-regular fa-comment" style="color: #fd5b4f;"></i>
+                        17 Comments
+                    </span>
+                    <span class="item-date">August, 2020</span>
+                </div>
+            </div>
+        </div> 
+        <br>
+        <button class="blog-btn" id="see-more-btn">
+            See All Posts
+        </button>  
+        <button id="see-less-btn" style="display: none;">See Less</button>  
+    </section>
+    <footer class="footer">
+        <h1 class="footer-title">
+            Studio
+        </h1>
+        <div class="footer-list">
+            <h3 class="list-title links">Links</h3>
+            <ul class="list-links">
+                <li class="list-link">Individuals</li>
+                <li class="list-link">Companies</li>
+                <li class="list-link">The Studio</li>
+                <li class="list-link">About Us</li>
+                <li class="list-link">Blog</li>
+            </ul>
+        </div>
+        <div class="footer-list">
+            <h3 class="list-title res">Resources</h3>
+            <ul class="list-resources">
+                <li class="list-link2">Pinterest</li>
+                <li class="list-link2">Behance</li>
+                <li class="list-link2">Photoshop</li>
+                <li class="list-link2">Lightroom</li>
+                <li class="list-link2">Adobe Illustrator</li>
+            </ul>
+        </div>
+        <div class="footer-list">
+            <h3 class="list-title loc">Studio Inc</h3>
+            <ul class="list-loc">
+                <li class="list-link loc"><i class="fa-solid fa-location-dot"></i>  125 Southern Way</li>
+                <li class="list-link loc">EH123 1SZ</li>
+                <li class="list-link loc">north Middleton, UK</li>
+            </ul>
+        </div>
+        <div class="footer-list">
+            <h3 class="list-title contact">Contact</h3>
+            <ul class="list-contact">
+                <li class="list-link contact">(123) 345 3781</li>
+                <li class="list-link contact">smile@studio-inc.com</li>
+            </ul>
+        </div>
+        <div class="footer-list">       
+            <ul class="list-socials">
+                <li class="list-link"><a href="https://www.facebook.com/?locale=uk_UA" target="_blank">Facebook</a></li>
+                <li class="list-link"><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                <li class="list-link"><a href="https://www.linkedin.com/" target="_blank">Linkedin</a></li>
+                <li class="list-link"><a href="https://reviewgrower.com/google-business-rating/" target="_blank">Google Rating</a></li>
+                <li class="list-link"><a href="https://www.yelp.com/" target="_blank">Yelp</a></li>
+            </ul>
+        </div>
+        <hr class="footer-line" color="#484848" width="1890px" size="2px">
+        <span class="copyright">© 2020. All rights reserved.</span>
+    </footer>
+</body>
+</html>
